@@ -1,0 +1,1113 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="alvaros"
+    />
+    <title>Alvaros v gen</title>
+    <style>
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior:initial;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Base styles */
+
+body {
+  font-family: monospace;
+  font-size: 1.8rem; 
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  box-shadow: 0 2px 0 rgba(184, 41, 41, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.nav-list a:hover {
+  background: var(--main-blue);
+}
+
+/*wlcome*/
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-red);
+}
+
+/* Photos section */
+.Photos-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+@media (max-width: 28.75em) {
+  .Photos-section-header {
+    font-size: 4rem;
+  }
+}
+.Photos-section{
+  background: var(--main-blue);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px; 
+}
+ .background,.card{
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+        .card{
+            background-color: rgb(187, 183, 241);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid, #00a6a6;
+            flex-direction: column;
+            width: 180px;
+            height:420px;
+            border-radius: 10px;
+            transition: 0.1 ease;
+            box-shadow: 1px solid, #024874;
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+        .cover{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+          
+        }
+        .cover img{
+            width: 170px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .contentbook{ 
+           text-align: center;
+        }
+        .contentbook h3{
+            color: #000000;
+        }
+        .contentbook p{
+            color: #666;
+        }
+        .div-button{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .button1,.button2{
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 15px;
+            background: #229cc5;
+            color: rgb(201, 197, 197);
+            border: rgb(0, 45, 97) 3px solid;
+            border-radius: 10px;
+            padding: 2px 10px;
+            cursor: pointer;
+        }
+
+        .button1:hover,.button2:hover{
+            opacity:0.9;
+            transform: scale(1.1);
+            color: #229cc5 ;
+        }
+        .cardsid{
+            background-color: rgb(187, 183, 241);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid, #00a6a6;
+            flex-direction: column;
+            width: 180px;
+            height:420px;
+            border-radius: 10px;
+            transition: 0.1 ease;
+            box-shadow: 1px solid, #024874;
+        }
+        .cardsid:hover{
+            transform: scale(1.1);
+        }
+        .contentbooksid{ 
+           text-align: center;
+        }
+        .contentbooksid h3{
+            color: #000000;
+        }
+        .contentbooksid p{
+            color: #666;
+        }
+        .div-buttonsid{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .buttonsid{
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 15px;
+            background: #229cc5;
+            color: rgb(201, 197, 197);
+            border: rgb(0, 45, 97) 3px solid;
+            border-radius: 10px;
+            padding: 2px 10px;
+            cursor: pointer;
+        }
+
+        .buttonsid:hover{
+            opacity:0.9;
+            transform: scale(1.1);
+            color: #229cc5 ;
+        }
+        .cardpart2{
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+         .cardpart2{
+            background-color: rgb(187, 183, 241);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid, #00a6a6;
+            flex-direction: column;
+            width: 180px;
+            height:420px;
+            border-radius: 10px;
+            transition: 0.1 ease;
+            box-shadow: 1px solid, #024874;
+        }
+        .cardpart2:hover{
+            transform: scale(1.1);
+        }
+        .coverpart2{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px;
+        }
+        .coverpart2 img{
+            width: 170px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        .contentbookpart2{ 
+           text-align: center;
+        }
+        .contentbookpart2 h3{
+            color: #000000;
+        }
+        .contentbookpart2 p{
+            color: #666;
+        }
+        .buttonpart22{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .buttonpart2,
+        .buttonpart1{
+            list-style: none;
+            font-family: sans-serif;
+            font-size: 15px;
+            background: #229cc5;
+            color: rgb(207, 193, 193);
+            border: rgb(0, 45, 97) 3px solid;
+            border-radius: 10px;
+            padding: 2px 10px;
+            cursor: pointer;
+        }
+        .buttonpart1:hover,.buttonpart2:hover{
+            opacity:0.9;
+            transform: scale(1.1);
+            color: #229cc5 ;
+        }
+        a:link{
+        text-decoration: none;
+        color: rgb(17, 1, 1);
+        }
+        a:active{
+        text-decoration: none;
+        }
+        a:visited{
+        text-decoration: none;
+        color: rgb(24, 5, 5);
+        }
+        a:hover{
+        text-decoration: none;
+        }
+        h4{
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+        }
+        button{
+            align-items: center; 
+        }
+        .uli{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+        }
+       
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+.show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+}
+.btn-show-all {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition:  0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--main-red);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-gray);
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+/* Footer */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-gray);
+  border-top: 4px solid var(--main-red);
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+    </style>
+  </head>
+  <body>
+   
+
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#Photos">Photos</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>V GEN</h1>
+      <p>Matlabus Salik Boarding School</p>
+    </section>
+
+
+    <section id="Photos" class="Photos-section">
+      <h2 class="Photos-section-header">These are some Of Our Members</h2>
+      <div class="Photos-grid">
+     <div class="uli">
+    <div class="card">
+        <div class="cardbackground">
+            <div class="cover">
+               <img src="IP.50K8XKnGc5DrkWSA8XflUAHaKn?rs=1&pid=ImgDetMain"  alt="book title">  
+            </div>
+            <div class="contentbook">
+                <h3 >Ketua    V GEN</h3>
+                <p >Ahmad Satrio WibiSono</p>
+                <p ><small>Teknik Pengelasan</small></p>
+            </div>
+            <div class="div-button">
+                <button class="button1"><a href="" id="ahrev">JOBDISK</a></button>
+                <button class="button2"><a href="" id="ahrev">BIO</a></button>
+            </div>
+        </div>
+    </div>
+   <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Ketua</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >...............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="h/id/OIP.S_R3_CB9bqPAlzpvJ4S9kwAAAA?w=142&h=208&c=7&r=0&o=5&pid=1.7"  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil    V GEN</h3>
+                <p >Muhammad Ariful Khasan</p>
+                <p ><small>Maintenece Hardwer</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="https://archive.org/details/kisah-tanah-jawa-investigasi-mitos-dan-mistis/Kisah%20Tanah%20Jawa%20Bank%20Gaib/" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="uli">
+  <div class="card">
+        <div class="cardbackground">
+            <div class="cover">
+               <img src="ges-amazon.com/images/S/compressed.photo.goodreads.com/books/1580200699i/50701284.jpg"  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Sekertaris    V GEN</h3>
+                <p >Raihan Ega Alyandra</p>
+                <p ><small>Multimedia</small></p>
+            </div>
+            <div class="div-button">
+                <button class="button1"><a href="https://archive.org/details/h%20Tanah%20Jawa%20Pocong%20Gundul/" id="ahrev">R</a></button>
+                <button class="button2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+     <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Sekertaris</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >.................</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="ervices/img/kisahtanahjawakisahtanahjawa"  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Sekertaris</h3>
+                <p >Ahmad Hasan Almuhtadin</p>
+               <p ><small>Teknik Samblon</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="https://archive.org/detailh%20Jawa%20Bank%20Gaib/" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uli">
+      <div class="card">
+        <div class="cardbackground">
+            <div class="cover">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbook">
+                <h3 >Bendahara   V GEN</h3>
+                <p >Muhammad Faiz Rahmadinata</p>
+                <p ><small>Pemrograman Jaringan</small></p>
+            </div>
+            <div class="div-button">
+                <button class="button1"><a href="" id="ahrev">R</a></button>
+                <button class="button2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+     <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Bendahara</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Bendahara</h3>
+                <p >Habibie Khairan Ramadhan</p>
+                <p ><small>Multimedia</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Keamanan    V GEN</h3>
+                <p >M Naufal Abdul Hamid</p>
+                <p ><small>Arsitektur</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+     <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Keamanan</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >...............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="" alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Keamanan</h3>
+                <p >Muhammad Anwar Muttaqin</p>
+                <p ><small>GTS</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Bahasa    V GEN</h3>
+                <p >Mahesa Firman Prayoga</p>
+                <p ><small>Maintenece Hardwer</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+     <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Bahasa Informasi</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >...............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="" alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Bahasa</h3>
+                <p >Muhammad Maskur Alfian</p>
+                <p ><small>Perikanan</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Kebersihan    V GEN</h3>
+                <p >A Daris Adiniata</p>
+                <p ><small>Pertanian</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+     <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Kebersihan</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >...............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="" alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Kebersihan</h3>
+                <p >Rico Andrianto</p>
+                <p ><small>Perikanan</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Agama pendidik V GEN</h3>
+                <p >Abdul Wahab Hasbullah</p>
+                <p ><small>Arsitektur</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+     <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Agama Pendidikan</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >...............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="" alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Agama pendidik</h3>
+                <p >Raffi Andhika Pratama</p>
+                <p ><small>Pengolahan Tempe</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Olahraga Kesehatan   V GEN</h3>
+                <p >Luxy Aditta Yusuf</p>
+                <p ><small>Pemrograman Jaringan</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+     <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Olahraga Kesehatan</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >...............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="" alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Olahraga Kesehatn</h3>
+                <p >Ahmad Khomaidi Ali</p>
+                <p ><small>Pengolahan Tempe</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Seni Budaya   V GEN</h3>
+                <p >Arya Rahmadhani</p>
+                <p ><small>Arsitektur</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Seni Budaya</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >...............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="" alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Seni Budaya</h3>
+                <p >Ken Daun Ahmad AA</p>
+                <p ><small>Multimedia</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Pramuka   V GEN</h3>
+                <p >Faiz Fazri Al Rasyad</p>
+                <p ><small>Teknik Pengelasan</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardsid">
+        <div class="cardbackgroundsid">
+            <div class="coversid">
+              <h1>Pramuka</h1>
+            </div>
+            <div class="contentbooksid">
+                <h3 >Makna</h3>
+                <p >...............</p>    
+            </div>
+            <div class="div-buttonsid">
+                <button class="buttonsid"><a href="" id="ahrev">Proker</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src="" alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Wakil Pramuka</h3>
+                <p >Alif Summa Ramadhan</p>
+                <p ><small>Maintenece Hardwer</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Kantin  V GEN</h3>
+                <p >Rahmad Bagus Ramadhan</p>
+                <p ><small>Pertukangan</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Dapur Konsumsi  V GEN</h3>
+                <p >Tantowi Achmad Mudjie</p>
+                <p ><small>Pertukangan</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div Class="uli">
+    <div class="cardpart2">
+        <div class="cardbackgroundpart2">
+            <div class="coverpart2">
+               <img src=""  alt="book title">  
+            </div>
+            <div class="contentbookpart2">
+                <h3 >Sarpras   V GEN</h3>
+                <p >Muhammad Ali Rahmdhani</p>
+                <p ><small>GTS</small></p>
+            </div>
+            <div class="buttonpart22">
+                <button class="buttonpart1"><a href="" id="ahrev">R</a></button>
+                <button class="buttonpart2"><a href="file:///G:/Untitled-1.html" id="ahrev">bio</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="show">
+      <a
+        href="file:///D:/coding/perpus%20mufara%202.html"
+        class="btn-show-all"
+        target="_blank"
+        >Show all<i class="fas fa-chevron-right"></i></a>
+        </div>
+    </section>
+
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>contack us at ALVAROS GROUP</p>
+      </div>
+      <div class="contact-links">
+        <a
+          href="https://Instagram.com/#"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-facebook-square"></i> Instagram</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/#"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a
+          href="https://twitter.com/#"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-twitter"></i> Twitter</a
+        >
+        <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&dsh=S-385765438%3A1772927650095673&ifkv=ASfE1-qiFnkEE3xUYuMf9WvP9vfNdZ9lzaqiTHkdRA88XwwrYR9gs5NR1P-mGGl8AD8eqAFg-NL-&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a
+        >
+        <a href="file:///D:/coding/part%20of%20alva.html" class="btn contact-details"
+          ><i class="fas fa-mobile-alt"></i> Call me</a
+        >
+      </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+
+    <footer>
+      <p style="padding-right: 50px;">
+        this website made just for trying in development our skill in programing of V GEN.....
+      <b>BY ALVAROS</b></p>
+      <p>
+         V
+        <a href="d:\Bendahara\mine\haikk.mp4" target="_blank"
+          style="color: white;">generation Putra <i class="fas fa-user-check">our group</i>
+        </a>
+      </p>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
